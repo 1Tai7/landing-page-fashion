@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #0b090a;
+  color: aliceblue;
+  padding-block: 2rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4rem;
+}
+h2 a {
+  font-family: "Bodoni Moda", serif;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+nav span {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-block: 4px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+nav span:hover {
+  border-bottom: 1px solid aliceblue;
+}
+.swiper-pagination-bullet-active {
+  background: #b29700 !important;
+}
+.box-info {
+  display: flex;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  justify-content: space-between;
+  background: linear-gradient(
+    121deg,
+    rgba(178, 151, 0, 1) 3%,
+    rgba(11, 9, 10, 0) 14%
+  );
+}
+
+.box-info-left span {
+  display: block;
+  font-family: "Bodoni Moda", serif;
+  font-size: 90px;
+  line-height: 6rem;
+}
+.box-info-left p {
+  font-family: "League Spartan", sans-serif;
+  font-weight: lighter;
+  padding-block: 3rem;
+  padding-right: 5rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.box-info-right img {
+  width: 10rem;
+  background-color: #b29700;
+  padding: 5px;
+  border-radius: 6rem;
+}
+button {
+  border: none;
+  color: aliceblue;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+
+  padding-inline: 2rem;
+  border-radius: 5px;
+}
+.b-moustace {
+  background-color: #b29700;
+  padding-block: 18px;
+}
+.b-info {
+  display: flex;
+}
+.b-watch {
+  background-color: transparent;
+  color: #b29700 !important;
+  border: 1px solid #b29700;
+  padding-block: 12px;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.icon-tabler-player-play {
+  margin-right: 7px;
+}
+.stats {
+  display: flex;
+  padding-bottom: 5rem;
+}
+.stats div {
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats div:nth-child(2) {
+  border-left: 1px solid aliceblue;
+  border-right: 1px solid aliceblue;
+}
+.stats h3 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: lighter;
+  font-size: xx-large;
+}
+.stats h6 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: lighter;
+  font-size: small;
+}
+.menu-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 4rem;
+}
+.menu-second h2 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 40px;
+  padding-block: 2rem;
+}
+.menu-second div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  padding-bottom: 3rem;
+}
+.menu-second span:hover {
+  border-bottom: 1px solid aliceblue;
+}
+.swiper {
+  width: 100%;
+  height: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-wrapper img {
+  width: 5rem;
+  height: auto;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+footer a {
+  padding-left: 1rem;
+}
+.icon-tabler-menu-deep {
+  display: none;
+}
+@media (max-width: 660px) {
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  nav {
+    padding-inline: 1rem;
+  }
+  .menu-primary,
+  .login {
+    display: none;
+  }
+  .icon-tabler-menu-deep {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
+  .box-info {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding-inline: 1rem;
+  }
+  .box-info-right {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+  }
+  .box-info-right img {
+    width: 7rem;
+  }
+  .box-info-left span {
+    font-size: 50px;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .box-info-left p {
+    padding-block: 2rem;
+    padding-right: 0;
+    text-align: center;
+  }
+  .b-info {
+    display: flex;
+    justify-content: center;
+  }
+  .b-moustace,
+  .b-watch {
+    padding-block: 5px;
+  }
+  .stats {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  .stats div {
+    padding-inline: 1rem;
+  }
+  .stats h3 {
+    font-size: 15px;
+  }
+  .stats h6 {
+    font-size: 12px;
+  }
+  .menu-second {
+    padding-inline: 1rem;
+  }
+  .menu-second h2 {
+    font-size: 21px;
+    padding-bottom: 1rem;
+  }
+  .menu-second span {
+    font-size: 12px;
+  }
+}
